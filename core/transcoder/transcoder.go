@@ -91,7 +91,7 @@ func (v *VideoSize) getString() string {
 	heightString := strconv.Itoa(v.Height)
 
 	if widthString != "0" && heightString != "0" {
-		return widthString + ":" + heightString
+		return "w=" + widthString + ":" + "h=" + heightString
 	} else if widthString != "0" {
 		return widthString + ":-2"
 	} else if heightString != "0" {
